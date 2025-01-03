@@ -14,7 +14,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 // setting to the environment PORT variable so that if we deploy to Heroku it will listen
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
     console.log(`Running a GraphQL API server at http://localhost:${PORT}/graphql`);
